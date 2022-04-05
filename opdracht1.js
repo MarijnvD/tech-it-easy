@@ -16,8 +16,13 @@ const ambiTv = inventory.filter((tv) =>{
 
 console.log("1C" , ambiTv);
 
-inventory.sort((a, b) => {
-    return a.price - b.price;
-})
+function sortTv(array) {
+
+    array.sort((a, b) => {
+        return a.price - b.price;
+    })
+}
+
+sortTv(inventory);
 
 console.log("1D ", inventory);
