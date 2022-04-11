@@ -1,0 +1,116 @@
+/* ------------------------------- 0. Imports & Variables -------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto&display=swap');
+
+:root {
+    --clr-bg: #4845E4;
+    --clr-bg-light:#F3F6F9;
+    --clr-special-text: white;
+    --clr-standard-text: #0C0C0C;
+    --clr-accent:#5722CD;
+    --clr-accent-light:#F2F0FF;
+    --clr-button:#ED4385;
+    --clr-service-tile: #7A7A7A;
+    --ff-header:'Merriweather', sans-serif;
+    --ff-body: 'Roboto', sans-serif;
+}
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+body {
+    font-family: var(--ff-body);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--ff-header);
+    padding-top: 10px;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content-container {
+    width: 600px;
+    text-align: center;
+    padding: 50px 10px 10px 10px;
+}
+
+
+.tiles {
+    display: flex;
+    justify-content: center;
+    padding: 50px 10px 150px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+#tiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+#tiles article {
+    border: 1px solid blue;
+    margin:20px;
+    padding: 20px;
+    background: beige;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    height:fit-content;
+    width:fit-content;
+    min-height: 200px;
+}
+
+#tiles h2 {
+    text-align: center;
+    color: black;
+    margin: 0 0 15px 0;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.extra-width {
+    width:fit-content;
+}
+
+.service-art::after {
+    content: "Tech it Easy";
+    text-align: center;
+    position: absolute;
+    font-size: 350px;
+    left: calc(50% - 950px);
+    bottom: calc(50% - 820px);
+    background: white;
+    z-index: -1;
+    opacity: 0.1;
+    color: var(--clr-accent);
+}
+
+button {
+
+    padding: 10px 10px 10px 10px;
+    margin: 50px 80px 10px 10px;
+}
