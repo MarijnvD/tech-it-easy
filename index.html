@@ -2,9 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <title>Tech It Easy Dashboard</title>
 </head>
 <body>
 
+<h1>Marijn's absoluut originele dashboard</h1>
+
+<div class ="tiles">
+    <section id="tiles">
+        <article>
+            <h2>Opdracht 1</h2>
+            <p id="1a"></p>
+            <p id="1b"></p>
+            <p id="1c"></p>
+            <p id="1d"></p>
+        </article>
+
+        <article>
+            <h2>Opdracht 2</h2>
+            <p id="2a" class="green"></p>
+            <p id="2c" class="blue"></p>
+            <p id="2e" class="red"></p>
+        </article>
+
+        <article class="extra-width">
+            <h2>Opdracht 3</h2>
+            <p id="3a" class="green"></p>
+            <p id="3b" class="blue"></p>
+        </article>
+
+        <article class="extra-width">
+            <h2>Opdracht 4</h2>
+            <div id="model-info"></div>
+            <button type="button" onClick="empty(), allTVS(sortAZ(inventory))" id="sortAZ">Merk: A -> Z</button>
+            <button type="button" onClick="empty(), allTVS(sortZA(inventory))" id="sortZA">Merk: Z -> A</button>
+            <button type="button" onClick="empty(), allTVS(priceAZ(inventory))" id="priceAZ">Prijs: Laag naar Hoog</button>
+            <button type="button" onClick="empty(), allTVS(priceZA(inventory))" id="priceZA">Prijs: Hoog naar Laag</button>
+            <div id="buttons">
+                <div>
+                    <input class="checkbox" type="checkbox" id="checkbox" value="checkbox" onClick="ambiLight(this)">
+                    <label for="checkbox">Ambilight</label>
+                    <input class="checkbox" type="checkbox" id="checkbox2" value="checkbox" onClick="smartTv(this)">
+                    <label for="checkbox2">SmartTv</label>
+                </div>
+
+
+            </div>
+        </article>
+
+
+        <div class="border-blue"></div>
+        <div class="service-art"></div>
+    </section>
+
+</div>
+
+
+
+
+
+
+<script src="main.js"></script>
+<script src="opdracht1.js"></script>
+<script src="opdracht2.js"></script>
+<script src="opdracht3.js"></script>
+<script src="opdracht4.js"></script>
 </body>
 </html>
